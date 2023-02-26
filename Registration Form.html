@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+            <label>First Name :*</label>
+            <input type="text" name="name" required> 
+        </div>
+        <div>
+            <label>Last Name :*</label>
+            <input type="text" name="last name" required>
+        </div>
+        <div>
+            <label>Email Address :*</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label>Password :*</label>
+            <input type="password" name="pass" required>
+        </div>
+        <div>
+            <label>Confirm Password :*</label>
+            <input type="password" name="pass" required>
+        </div>
+        <div>
+            <label>Birthday : </label>
+            <input type="date" name="dob">
+        </div>
+        <label>Gender Identity :</label>
+        <div>
+            <!-- all radio must have the same name, so to get only one selection at a time-->
+            <input type="radio" name="radio">
+            <label>Male</label>
+            <input type="radio" name="radio">
+            <label>Female</label>
+            <input type="radio" name="radio">
+            <label>Non-Binary</label>
+            <input type="radio" name="radio">
+            <label>I prefer not to answer</label>
+        </div>
+        <label>A short description about myself :</label>
+        <div>
+            <textarea name="about me" rows="3" cols="20"></textarea>
+        </div>
+        <div>
+            <label>Favorite Language :</label>
+            <select name="dev languages">
+                <option selected>JaveScript</option>
+                <option>Python</option>
+                <option>C++</option>
+                <option>PHP</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="agreement" id="agreement" checked>
+            <label for="agreement">Yes, I would like receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create account" id="submit button" name="submit button">
+        </div>
+        <label>* indicates a required field</label>
+    </form>
+</body>
+</html>
